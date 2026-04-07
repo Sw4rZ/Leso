@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leso | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050505; color: #ffffff; scroll-behavior: smooth; overflow-x: hidden; }
+        .accent-purple { color: #a855f7; }
+        .bg-purple-main { background-color: #7e22ce; }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% -10%, #2e1065 0%, #050505 80%);
+        }
+        .stats-font { font-family: 'Space Grotesk', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.01);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glow-button {
+            box-shadow: 0 0 30px rgba(126, 34, 206, 0.3);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 50px rgba(168, 85, 247, 0.5);
+            transform: translateY(-3px);
+        }
+        .video-container:hover { border-color: rgba(168, 85, 247, 0.4); }
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center p-10 max-w-7xl mx-auto">
+        <div class="text-3xl font-black italic tracking-tighter">Leso</div>
+        <div class="hidden md:flex gap-12 text-[10px] font-bold uppercase tracking-[0.5em] text-gray-500">
+            <a href="#home" class="hover:text-white transition">Home</a>
+            <a href="#work" class="hover:text-white transition">Work</a>
+            <a href="#reviews" class="hover:text-white transition">Reviews</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+        </div>
+        <div class="flex gap-6">
+            <a href="https://x.com/LesoAron/" target="_blank" class="text-gray-400 hover:accent-purple transition"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://discord.com/users/1247214360493822114" target="_blank" class="text-gray-400 hover:accent-purple transition"><i class="fa-brands fa-discord"></i></a>
+            <a href="mailto:leso.edits@gmail.com" class="text-gray-400 hover:accent-purple transition"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-gradient min-h-[85vh] flex flex-col items-center justify-center text-center px-6">
+        
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-8 tracking-tighter leading-tight uppercase">
+            STOP THE SCROLL. <br> START THE <span class="accent-purple italic">CONVERSION.</span>
+        </h1>
+
+        <p class="text-gray-400 text-base md:text-lg max-w-2xl mb-12 font-medium leading-relaxed">
+            I specialize in <span class="text-white">High-Retention SaaS Explainers</span> and viral short-form content. 
+            By blending <span class="text-white">Sleek Motion Graphics</span> with minimalist typography, I help brands build authority and dominate the algorithm.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-6 mb-24">
+            <a href="#contact" class="bg-purple-main text-white px-12 py-4 rounded-full font-black text-sm glow-button uppercase tracking-[0.2em]">Work With Me</a>
+            <a href="#work" class="border border-white/10 bg-white/5 backdrop-blur-md text-white px-12 py-4 rounded-full font-black text-sm hover:bg-white hover:text-black transition uppercase tracking-[0.2em]">View My Work</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 border-t border-white/5 pt-16 w-full max-w-3xl stats-font" id="stats-container">
+            <div>
+                <p class="text-5xl font-bold mb-2"><span class="counter" data-target="10">0</span>+</p>
+                <p class="text-[9px] text-gray-500 uppercase tracking-[0.4em] font-bold text-center">Projects Delivered</p>
+            </div>
+            <div>
+                <p class="text-5xl font-bold mb-2"><span class="counter" data-target="5">0</span>+</p>
+                <p class="text-[9px] text-gray-500 uppercase tracking-[0.4em] font-bold text-center">Premium Clients</p>
+            </div>
+            <div>
+                <p class="text-5xl font-bold mb-2">12+</p>
+                <p class="text-[9px] text-gray-500 uppercase tracking-[0.4em] font-bold text-center">hours online daily</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-40 max-w-7xl mx-auto px-6">
+        <h3 class="text-center text-gray-600 text-[10px] tracking-[0.8em] uppercase font-bold mb-24 italic">Some of my works</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div class="video-container border border-white/5 rounded-[2.5rem] overflow-hidden bg-zinc-950 transition-all duration-500">
+                <div class="aspect-video bg-black">
+                    <iframe class="w-full h-full opacity-70 hover:opacity-100 transition duration-700" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+                </div>
+                <div class="p-10">
+                    <h4 class="text-xl font-bold tracking-tight">SaaS Explainer 2026</h4>
+                    <p class="text-gray-500 text-sm mt-3 font-medium uppercase tracking-wider">Product Walkthrough / Motion</p>
+                </div>
+            </div>
+            <div class="video-container border border-white/5 rounded-[2.5rem] overflow-hidden bg-zinc-950 transition-all duration-500">
+                <div class="aspect-video bg-black">
+                    <iframe class="w-full h-full opacity-70 hover:opacity-100 transition duration-700" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+                </div>
+                <div class="p-10">
+                    <h4 class="text-xl font-bold tracking-tight">High-Retention Edit</h4>
+                    <p class="text-gray-500 text-sm mt-3 font-medium uppercase tracking-wider">Short-Form / Viral Growth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-40 px-6">
+        <div class="max-w-4xl mx-auto bg-black border border-white/10 rounded-[3rem] p-16 md:p-24 text-center relative overflow-hidden shadow-[0_0_50px_rgba(168,85,247,0.15)]">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-purple-600/5 blur-[120px] pointer-events-none"></div>
+            
+            <h2 class="text-5xl md:text-6xl font-medium mb-12 tracking-tight text-white">
+                How To <span class="italic font-serif">Work</span> With Me?
+            </h2>
+            
+            <a href="https://discord.com/users/1247214360493822114" target="_blank" class="inline-block bg-white text-black px-12 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300 mb-12 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+                Send Me A DM
+            </a>
+
+            <div class="flex justify-center items-center gap-10 text-2xl text-gray-500">
+                <a href="https://x.com/LesoAron/" target="_blank" class="hover:text-white transition-colors">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://discord.com/users/1247214360493822114" target="_blank" class="hover:text-white transition-colors">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="mailto:leso.edits@gmail.com" class="hover:text-white transition-colors">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center opacity-30">
+        <p class="text-[9px] tracking-[1em] font-bold uppercase text-white">LESO STUDIO &bull; 2026</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+            const duration = 2000; 
+
+            const startCounting = (counter) => {
+                const target = +counter.getAttribute('data-target');
+                const increment = target / (duration / 16); 
+                let currentCount = 0;
+
+                const updateCounter = () => {
+                    currentCount += increment;
+                    if (currentCount < target) {
+                        counter.innerText = Math.ceil(currentCount);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        counters.forEach(counter => startCounting(counter));
+                        observer.disconnect(); 
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            const statsSection = document.getElementById('stats-container');
+            if (statsSection) {
+                observer.observe(statsSection);
+            }
+        });
+    </script>
+
+</body>
+</html>
