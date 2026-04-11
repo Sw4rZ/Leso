@@ -1,41 +1,148 @@
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-    
-    <!-- VIDEO 1 -->
-    <div class="video-container border border-white/5 rounded-[2.5rem] overflow-hidden bg-zinc-950 transition-all duration-500">
-        <div class="aspect-video bg-black">
-            <iframe 
-                class="w-full h-full opacity-70 hover:opacity-100 transition duration-700"
-                src="https://www.youtube.com/embed/JzAKf0t8u8w?rel=0&modestbranding=1"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="p-10">
-            <h4 class="text-xl font-bold tracking-tight">SaaS Explainer</h4>
-            <p class="text-gray-500 text-sm mt-3 font-medium uppercase tracking-wider">
-                Clean motion design focused on clarity and conversion
-            </p>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leso | Portfolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.accent-purple { color: #a855f7; }
+.bg-purple-main { background-color: #7e22ce; }
+
+.hero-gradient {
+    background: radial-gradient(circle at 50% -10%, #2e1065 0%, #050505 80%);
+}
+
+.glow-button {
+    box-shadow: 0 0 30px rgba(126, 34, 206, 0.3);
+    transition: 0.3s;
+}
+.glow-button:hover {
+    box-shadow: 0 0 60px rgba(168, 85, 247, 0.6);
+    transform: translateY(-3px);
+}
+
+.video-container:hover {
+    border-color: rgba(168, 85, 247, 0.4);
+    transform: translateY(-5px);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="flex justify-between items-center p-8 max-w-7xl mx-auto">
+    <div class="text-3xl font-black italic">Leso</div>
+
+    <div class="hidden md:flex gap-10 text-xs uppercase tracking-widest text-gray-500">
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
     </div>
 
-    <!-- VIDEO 2 -->
-    <div class="video-container border border-white/5 rounded-[2.5rem] overflow-hidden bg-zinc-950 transition-all duration-500">
-        <div class="aspect-video bg-black">
-            <iframe 
-                class="w-full h-full opacity-70 hover:opacity-100 transition duration-700"
-                src="https://www.youtube.com/embed/m0gl1fVioAg?rel=0&modestbranding=1"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="p-10">
-            <h4 class="text-xl font-bold tracking-tight">Short-Form Reel</h4>
-            <p class="text-gray-500 text-sm mt-3 font-medium uppercase tracking-wider">
-                Fast-paced editing built for retention and engagement
-            </p>
-        </div>
+    <div class="flex gap-5 text-gray-400">
+        <a href="https://x.com/LesoAron/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://discord.com/users/1247214360493822114" target="_blank"><i class="fa-brands fa-discord"></i></a>
     </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-gradient min-h-screen flex flex-col justify-center items-center text-center px-6">
+
+<h1 class="text-4xl md:text-6xl font-black uppercase leading-tight mb-6">
+STOP THE SCROLL.<br>
+START THE <span class="accent-purple italic">CONVERSION.</span>
+</h1>
+
+<p class="text-gray-400 max-w-xl mb-10">
+SaaS explainers and short-form videos built to grab attention and convert.
+</p>
+
+<div class="flex gap-4">
+<a href="#contact" class="bg-purple-main px-8 py-3 rounded-full font-bold glow-button">
+Work With Me
+</a>
+
+<a href="#work" class="border border-white/10 px-8 py-3 rounded-full">
+View Work
+</a>
+</div>
+
+</section>
+
+<!-- WORK -->
+<section id="work" class="py-24 max-w-6xl mx-auto px-6">
+
+<h2 class="text-center text-gray-500 text-xs uppercase tracking-widest mb-16">
+Some of my works
+</h2>
+
+<div class="grid md:grid-cols-2 gap-12">
+
+<!-- VIDEO 1 -->
+<div class="video-container border border-white/10 rounded-3xl overflow-hidden transition">
+
+<div class="aspect-video">
+<iframe class="w-full h-full"
+src="https://www.youtube.com/embed/JzAKf0t8u8w?rel=0&modestbranding=1"
+allowfullscreen></iframe>
+</div>
+
+<div class="p-6">
+<h3 class="font-bold text-lg">SaaS Explainer</h3>
+<p class="text-gray-400 text-sm mt-2">
+Clean motion design focused on clarity and conversion
+</p>
+</div>
 
 </div>
+
+<!-- VIDEO 2 -->
+<div class="video-container border border-white/10 rounded-3xl overflow-hidden transition">
+
+<div class="aspect-video">
+<iframe class="w-full h-full"
+src="https://www.youtube.com/embed/m0gl1fVioAg?rel=0&modestbranding=1"
+allowfullscreen></iframe>
+</div>
+
+<div class="p-6">
+<h3 class="font-bold text-lg">Short-Form Reel</h3>
+<p class="text-gray-400 text-sm mt-2">
+Fast-paced editing built for retention and engagement
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 text-center">
+
+<h2 class="text-4xl font-bold mb-6">Work With Me</h2>
+
+<a href="https://discord.com/users/1247214360493822114"
+class="bg-white text-black px-8 py-3 rounded-full font-bold inline-block">
+Send Me a DM
+</a>
+
+</section>
+
+</body>
+</html>
