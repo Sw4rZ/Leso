@@ -4,145 +4,141 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leso | Portfolio</title>
-
 <script src="https://cdn.tailwindcss.com"></script>
-
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <style>
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #050505;
-    color: #ffffff;
-    overflow-x: hidden;
-}
-
+body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050505; color: #ffffff; scroll-behavior: smooth; overflow-x: hidden; }
 .accent-purple { color: #a855f7; }
 .bg-purple-main { background-color: #7e22ce; }
-
-.hero-gradient {
-    background: radial-gradient(circle at 50% -10%, #2e1065 0%, #050505 80%);
-}
-
-.glow-button {
-    box-shadow: 0 0 30px rgba(126, 34, 206, 0.3);
-    transition: 0.3s;
-}
-.glow-button:hover {
-    box-shadow: 0 0 60px rgba(168, 85, 247, 0.6);
-    transform: translateY(-3px);
-}
-
-.video-container:hover {
-    border-color: rgba(168, 85, 247, 0.4);
-    transform: translateY(-5px);
-}
+.hero-gradient { background: radial-gradient(circle at 50% -10%, #2e1065 0%, #050505 80%); }
+.stats-font { font-family: 'Space Grotesk', sans-serif; }
+.glass-card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.05); }
+.glow-button { box-shadow: 0 0 30px rgba(126, 34, 206, 0.3); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.glow-button:hover { box-shadow: 0 0 50px rgba(168, 85, 247, 0.5); transform: translateY(-3px); }
+.video-container:hover { border-color: rgba(168, 85, 247, 0.4); }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav class="flex justify-between items-center p-8 max-w-7xl mx-auto">
-    <div class="text-3xl font-black italic">Leso</div>
+<nav class="flex justify-between items-center p-10 max-w-7xl mx-auto">
+<div class="text-3xl font-black italic tracking-tighter">Leso</div>
 
-    <div class="hidden md:flex gap-10 text-xs uppercase tracking-widest text-gray-500">
-        <a href="#home">Home</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-    </div>
+<div class="hidden md:flex gap-12 text-[10px] font-bold uppercase tracking-[0.5em] text-gray-500">
+<a href="#home" class="hover:text-white transition">Home</a>
+<a href="#work" class="hover:text-white transition">Work</a>
+<a href="#reviews" class="hover:text-white transition">Reviews</a>
+<a href="#contact" class="hover:text-white transition">Contact</a>
+</div>
 
-    <div class="flex gap-5 text-gray-400">
-        <a href="https://x.com/LesoAron/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://discord.com/users/1247214360493822114" target="_blank"><i class="fa-brands fa-discord"></i></a>
-    </div>
+<div class="flex gap-6">
+<a href="https://x.com/LesoAron/" target="_blank" class="text-gray-400 hover:accent-purple transition"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="https://discord.com/users/1247214360493822114" target="_blank" class="text-gray-400 hover:accent-purple transition"><i class="fa-brands fa-discord"></i></a>
+<a href="mailto:leso.edits@gmail.com" class="text-gray-400 hover:accent-purple transition"><i class="fa-regular fa-envelope"></i></a>
+</div>
 </nav>
 
-<!-- HERO -->
-<section class="hero-gradient min-h-screen flex flex-col justify-center items-center text-center px-6">
+<section id="home" class="hero-gradient min-h-[85vh] flex flex-col items-center justify-center text-center px-6">
 
-<h1 class="text-4xl md:text-6xl font-black uppercase leading-tight mb-6">
-STOP THE SCROLL.<br>
-START THE <span class="accent-purple italic">CONVERSION.</span>
+<h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-8 tracking-tighter leading-tight uppercase">
+STOP THE SCROLL. <br> START THE <span class="accent-purple italic">CONVERSION.</span>
 </h1>
 
-<p class="text-gray-400 max-w-xl mb-10">
-SaaS explainers and short-form videos built to grab attention and convert.
+<p class="text-gray-400 text-base md:text-lg max-w-2xl mb-12 font-medium leading-relaxed">
+<span class="text-white">SaaS explainers</span> and <span class="text-white">short-form videos</span> built to grab attention and convert.
 </p>
 
-<div class="flex gap-4">
-<a href="#contact" class="bg-purple-main px-8 py-3 rounded-full font-bold glow-button">
-Work With Me
-</a>
+<div class="flex flex-col sm:flex-row gap-6 mb-24">
+<a href="#contact" class="bg-purple-main text-white px-12 py-4 rounded-full font-black text-sm glow-button uppercase tracking-[0.2em]">Work With Me</a>
+<a href="#work" class="border border-white/10 bg-white/5 backdrop-blur-md text-white px-12 py-4 rounded-full font-black text-sm hover:bg-white hover:text-black transition uppercase tracking-[0.2em]">View My Work</a>
+</div>
 
-<a href="#work" class="border border-white/10 px-8 py-3 rounded-full">
-View Work
-</a>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 border-t border-white/5 pt-16 w-full max-w-3xl stats-font" id="stats-container">
+<div>
+<p class="text-5xl font-bold mb-2"><span class="counter" data-target="10">0</span>+</p>
+<p class="text-[9px] text-gray-500 uppercase tracking-[0.4em] font-bold text-center">Projects Delivered</p>
+</div>
+
+<div>
+<p class="text-5xl font-bold mb-2"><span class="counter" data-target="5">0</span>+</p>
+<p class="text-[9px] text-gray-500 uppercase tracking-[0.4em] font-bold text-center">Premium Clients</p>
+</div>
+
+<div>
+<p class="text-5xl font-bold mb-2">12+</p>
+<p class="text-[9px] text-gray-500 uppercase tracking-[0.4em] font-bold text-center">hours online daily</p>
+</div>
 </div>
 
 </section>
 
-<!-- WORK -->
-<section id="work" class="py-24 max-w-6xl mx-auto px-6">
+<section id="work" class="py-40 max-w-7xl mx-auto px-6">
 
-<h2 class="text-center text-gray-500 text-xs uppercase tracking-widest mb-16">
+<h3 class="text-center text-gray-600 text-[10px] tracking-[0.8em] uppercase font-bold mb-24 italic">
 Some of my works
-</h2>
+</h3>
 
-<div class="grid md:grid-cols-2 gap-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
 
 <!-- VIDEO 1 -->
-<div class="video-container border border-white/10 rounded-3xl overflow-hidden transition">
-
-<div class="aspect-video">
-<iframe class="w-full h-full"
+<div class="video-container border border-white/5 rounded-[2.5rem] overflow-hidden bg-zinc-950 transition-all duration-500">
+<div class="aspect-video bg-black">
+<iframe class="w-full h-full opacity-70 hover:opacity-100 transition duration-700"
 src="https://www.youtube.com/embed/JzAKf0t8u8w?rel=0&modestbranding=1"
-allowfullscreen></iframe>
+frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="p-6">
-<h3 class="font-bold text-lg">SaaS Explainer</h3>
-<p class="text-gray-400 text-sm mt-2">
+<div class="p-10">
+<h4 class="text-xl font-bold tracking-tight">SaaS Explainer</h4>
+<p class="text-gray-500 text-sm mt-3 font-medium uppercase tracking-wider">
 Clean motion design focused on clarity and conversion
 </p>
 </div>
-
 </div>
 
 <!-- VIDEO 2 -->
-<div class="video-container border border-white/10 rounded-3xl overflow-hidden transition">
-
-<div class="aspect-video">
-<iframe class="w-full h-full"
+<div class="video-container border border-white/5 rounded-[2.5rem] overflow-hidden bg-zinc-950 transition-all duration-500">
+<div class="aspect-video bg-black">
+<iframe class="w-full h-full opacity-70 hover:opacity-100 transition duration-700"
 src="https://www.youtube.com/embed/m0gl1fVioAg?rel=0&modestbranding=1"
-allowfullscreen></iframe>
+frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="p-6">
-<h3 class="font-bold text-lg">Short-Form Reel</h3>
-<p class="text-gray-400 text-sm mt-2">
+<div class="p-10">
+<h4 class="text-xl font-bold tracking-tight">Short-Form Reel</h4>
+<p class="text-gray-500 text-sm mt-3 font-medium uppercase tracking-wider">
 Fast-paced editing built for retention and engagement
 </p>
 </div>
-
 </div>
 
 </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="py-24 text-center">
+<section id="contact" class="py-40 px-6">
+<div class="max-w-4xl mx-auto bg-black border border-white/10 rounded-[3rem] p-16 md:p-24 text-center relative overflow-hidden shadow-[0_0_50px_rgba(168,85,247,0.15)]">
 
-<h2 class="text-4xl font-bold mb-6">Work With Me</h2>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-purple-600/5 blur-[120px] pointer-events-none"></div>
 
-<a href="https://discord.com/users/1247214360493822114"
-class="bg-white text-black px-8 py-3 rounded-full font-bold inline-block">
-Send Me a DM
+<h2 class="text-5xl md:text-6xl font-medium mb-12 tracking-tight text-white">
+How To <span class="italic font-serif">Work</span> With Me?
+</h2>
+
+<a href="https://discord.com/users/1247214360493822114" target="_blank"
+class="inline-block bg-white text-black px-12 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300 mb-12 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+Send Me A DM
 </a>
 
+</div>
 </section>
+
+<footer class="py-20 text-center opacity-30">
+<p class="text-[9px] tracking-[1em] font-bold uppercase text-white">
+LESO STUDIO • 2026
+</p>
+</footer>
 
 </body>
 </html>
